@@ -1,14 +1,13 @@
 import styles from "./App.module.css";
-import Carousel from "./Carousel/Carousel";
-import MultiCarousel from "./MultiCarousel/MultiCarousel";
-
-import { images } from "./order-carousel/order-carousel-images";
+import Carousel from "./single-slide-carousel-ok/Carousel";
+import { images } from "./single-carousel-images/order-carousel-images";
+import MultiCarouselSC from "./multi-carousel-styled-component-ok/MultiCarouselSC";
 
 function App() {
   return (
     <div className={styles.app}>
       <Carousel slides={images} />
-      {/* <MultiCarousel slides={images} /> */}
+      <MultiCarouselSC />
     </div>
   );
 }
